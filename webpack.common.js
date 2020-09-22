@@ -7,7 +7,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'App',
+      title: 'Webpack & Web Components',
     }),
   ],
   output: {
@@ -17,13 +17,13 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
+        test: /\.css$/i,
         use: [
           'css-loader',
         ],
       },
       {
-        test: /\.html$/,
+        test: /\.html$/i,
         loader: 'html-loader'
       },
     ],
