@@ -26,6 +26,7 @@ class Hero extends HTMLElement {
     const template = document.createElement('template')
     template.innerHTML = heroTemplate
     this.shadowRoot.appendChild(template.content.cloneNode(true))
+    console.log(template)
   }
 
 }
