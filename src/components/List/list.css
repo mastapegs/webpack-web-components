@@ -1,9 +1,21 @@
 ul {
   list-style: none;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   padding: 5px;
-  background: cyan;
+  background: hsla(0, 0%, 40%, 1);
+  color: white;
   display: flex;
   justify-content: space-around;
+}
+
+li {
+  border: 3px solid red;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 0px black;
+}
+
+li:hover {
+  cursor: pointer;
 }
