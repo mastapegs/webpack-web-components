@@ -23,10 +23,9 @@ class Hero extends HTMLElement {
   }
 
   renderContent() {
-    const renderTag = document.createElement('div')
-    renderTag.className = "container"
-    renderTag.innerHTML = heroTemplate
-    this.shadowRoot.appendChild(renderTag)
+    const template = document.createElement('template')
+    template.innerHTML = heroTemplate
+    this.shadowRoot.appendChild(template.content.cloneNode(true))
   }
 
 }
