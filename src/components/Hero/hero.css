@@ -1,11 +1,11 @@
 :host {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 80%;
   margin: 0 auto;
   padding: 5px;
   height: 50vh;
   background: #000000;
   color: #FFFFFF;
-  justify-content: center;
-  align-items: center;
 }

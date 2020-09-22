@@ -23,12 +23,11 @@ class Hero extends HTMLElement {
 
   renderContent() {
     const renderTag = document.createElement('div')
+    renderTag.className = "container"
     renderTag.innerHTML = `
-      <div>
-        <h1>Hello, World!</h1>
-        <p>Rendered with a Web Component!</p>
-        <p>Using connectedCallback() to invoke render()</p>
-      </div>
+      <h1>Hello, World!</h1>
+      <p>Rendered with a Web Component!</p>
+      <p>Using connectedCallback() to invoke render()</p>
     `
     this.shadowRoot.appendChild(renderTag)
   }
