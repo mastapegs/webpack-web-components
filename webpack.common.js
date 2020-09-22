@@ -22,6 +22,10 @@ module.exports = {
           'css-loader',
         ],
       },
+      {
+        test: /\.html$/,
+        loader: 'html-loader'
+      },
     ],
   },
 }

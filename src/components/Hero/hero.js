@@ -1,4 +1,5 @@
 import styles from './hero.css'
+import heroTemplate from './heroTemplate.html'
 
 class Hero extends HTMLElement {
   constructor() {
@@ -17,18 +18,14 @@ class Hero extends HTMLElement {
 
   renderStyles() {
     const styleTag = document.createElement('style')
-    styleTag.textContent = styles.toString()
+    styleTag.textContent = styles
     this.shadowRoot.appendChild(styleTag)
   }
 
   renderContent() {
     const renderTag = document.createElement('div')
     renderTag.className = "container"
-    renderTag.innerHTML = `
-      <h1>Hello, World!</h1>
-      <p>Rendered with a Web Component!</p>
-      <p>Using connectedCallback() to invoke render()</p>
-    `
+    renderTag.innerHTML = heroTemplate
     this.shadowRoot.appendChild(renderTag)
   }
 
